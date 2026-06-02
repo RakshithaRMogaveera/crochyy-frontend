@@ -20,7 +20,7 @@ export default function Login() {
   const handleLogin = () =>{
     console.log("login data:", login)
 
-    axios.post("https://crochyy-backend.onrender.com/user/Login", login)
+    axios.post("http://localhost:7000/user/Login", login)
     .then((res)=>{
       console.log("login response:", res.data)
 

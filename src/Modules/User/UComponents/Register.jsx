@@ -24,7 +24,7 @@ export default function URegister() {
   const handleregister = () => {
     console.log("formdata:", formdata)
 
-    axios.post("https://crochyy-backend.onrender.com/user/registeruser", formdata)
+    axios.post("http://localhost:7000/user/registeruser", formdata)
       .then((res) => {
         console.log("registered user:", res.data)
 
