@@ -20,7 +20,7 @@ export default function Login() {
   const handleLogin = () =>{
     console.log("login data:", login)
 
-    axios.post("http://localhost:7000/user/Login", login)
+    axios.post("http://crochyy-backend.onrender.com/user/Login", login)
     .then((res)=>{
       console.log("login response:", res.data)
 
@@ -28,7 +28,7 @@ export default function Login() {
         localStorage.setItem("UserToken",res.data.token)
         alert("Login successful")
 
-        navigate("/")   // ✅ redirect after login (optional but useful)
+        navigate("/home")   // ✅ redirect after login (optional but useful)
       } else {
         alert("Invalid credentials")
       }
@@ -38,6 +38,7 @@ export default function Login() {
       alert("unsuccessful")
     })
   }
+  
 
   return (
     <Box

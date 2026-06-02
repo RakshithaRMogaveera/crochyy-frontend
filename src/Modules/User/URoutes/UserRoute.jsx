@@ -47,7 +47,7 @@ export default function UserRoute() {
         {/* MAIN PAGE */}
         <Route
           path='/'
-          element={<CrochyyHome/>}
+          element={<Login/>}
         />
 
         {/* USER PAGES */}
