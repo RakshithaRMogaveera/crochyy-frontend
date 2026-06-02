@@ -28,7 +28,7 @@ export default function Login() {
         localStorage.setItem("UserToken",res.data.token)
         alert("Login successful")
 
-        navigate("/home")   // ✅ redirect after login (optional but useful)
+        navigate("/crochyyhome")   // ✅ redirect after login (optional but useful)
       } else {
         alert("Invalid credentials")
       }
@@ -38,7 +38,6 @@ export default function Login() {
       alert("unsuccessful")
     })
   }
-  
 
   return (
     <Box

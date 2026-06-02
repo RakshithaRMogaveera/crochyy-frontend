@@ -49,6 +49,10 @@ export default function UserRoute() {
           path='/'
           element={<Login/>}
         />
+        <Route
+        path='/crochyyhome'
+        element={<CrochyyHome/>}
+        />
 
         {/* USER PAGES */}
         <Route
